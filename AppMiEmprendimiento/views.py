@@ -3,16 +3,16 @@ from django.http import HttpResponse
 
 # Create your views here.
 def inicio(request):
-    return HttpResponse("INICIO")
+    return render(request, "AppMiEmprendimiento/index.html")
 
 def proveedores(request):
-    return HttpResponse("Vista proveedores")
+    return render(request, "AppMiEmprendimiento/proveedor_test.html")
 
 def pedidos(request):
     return HttpResponse("Vista pedidos")
 
 def clientes(request):
-    return HttpResponse("Vista clientes")
+    return render(request, "AppMiEmprendimiento/cliente_test.html")
 
 def ventas(request):
     return HttpResponse("Vista ventas")
