@@ -6,13 +6,13 @@ def inicio(request):
     return render(request, "AppMiEmprendimiento/index.html")
 
 def proveedores(request):
-    return render(request, "AppMiEmprendimiento/proveedor_test.html")
+    return render(request, "AppMiEmprendimiento/proveedores.html")
 
 def pedidos(request):
-    return HttpResponse("Vista pedidos")
+    return render(request, "AppMiEmprendimiento/pedidos.html")
 
 def clientes(request):
-    return render(request, "AppMiEmprendimiento/cliente_test.html")
+    return render(request, "AppMiEmprendimiento/clientes.html")
 
 def ventas(request):
-    return HttpResponse("Vista ventas")
+    return render(request, "AppMiEmprendimiento/ventas.html")
