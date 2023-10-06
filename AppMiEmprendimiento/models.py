@@ -5,7 +5,7 @@ class Proveedor(models.Model):
     nombre = models.CharField(max_length=40)
     telefono = models.CharField(max_length=20)
     correo = models.EmailField(max_length=40)
-    hacen_envios = models.BooleanField()
+    hacen_envios = models.BooleanField(default=False)
 
     def __str__(self):
         return f"{self.nombre}"
